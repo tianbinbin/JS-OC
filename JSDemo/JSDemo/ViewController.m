@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TBJStest.h"
+#import "webViewjavascribtViewController.h"
 
 // 原生交互 这个库是apple iOS7 之后推出来的库 实现网页与原生的交互问题
 #import <JavaScriptCore/JavaScriptCore.h>
@@ -26,7 +27,7 @@
     self.title = @"js and Native";
     
     // 2. 创建webview 对象
-    self.CustomwebView=[[UIWebView alloc]initWithFrame:self.view.bounds];
+    self.CustomwebView=[[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-40)];
     self.CustomwebView.delegate=self;
     //添加webview到当前viewcontroller的view上
     [self.view addSubview:self.CustomwebView];
@@ -36,6 +37,13 @@
     NSURL *httpUrl=[NSURL URLWithString:httpStr];
     NSURLRequest *httpRequest=[NSURLRequest requestWithURL:httpUrl];
     [self.CustomwebView loadRequest:httpRequest];
+    
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height-40, self.view.bounds.size.width, 40)];
+    [btn setTitle:@"webviewjavascribt" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor  grayColor];
+    [btn addTarget:self action:@selector(TB_BtnClik:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
 }
 
@@ -115,15 +123,22 @@
     NSString *jsStr3=@"testobject.TestTowParameterSecondParameter('参数A','参数B')";
     [context evaluateScript:jsStr3];
     
-    
-    
-    
 }
 
 // 网页请求失败则会调用该方法
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     NSLog(@"网页加载失败");
+}
+
+
+
+-(void)TB_BtnClik:(UIButton *)btn{
+
+
+    // 跳转到下一个界面 用第三方库实现
+    [self.navigationController pushViewController:[[webViewjavascribtViewController alloc]init] animated:YES];
+    
 }
 
 

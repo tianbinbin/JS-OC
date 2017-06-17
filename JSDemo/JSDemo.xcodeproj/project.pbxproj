@@ -14,6 +14,7 @@
 		37D1130C1EF52DFC006B0402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D1130B1EF52DFC006B0402 /* Assets.xcassets */; };
 		37D1130F1EF52DFC006B0402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D1130D1EF52DFC006B0402 /* LaunchScreen.storyboard */; };
 		37D113181EF55D2A006B0402 /* TBJStest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D113171EF55D2A006B0402 /* TBJStest.m */; };
+		37D1131B1EF563A7006B0402 /* webViewjavascribtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1131A1EF563A7006B0402 /* webViewjavascribtViewController.m */; };
 		F92811A66DF88C9AD441B5A4 /* Pods_JSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B422D97CC074A0C31DEF45 /* Pods_JSDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		37D113101EF52DFC006B0402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37D113161EF55D2A006B0402 /* TBJStest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBJStest.h; sourceTree = "<group>"; };
 		37D113171EF55D2A006B0402 /* TBJStest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBJStest.m; sourceTree = "<group>"; };
+		37D113191EF563A7006B0402 /* webViewjavascribtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewjavascribtViewController.h; sourceTree = "<group>"; };
+		37D1131A1EF563A7006B0402 /* webViewjavascribtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewjavascribtViewController.m; sourceTree = "<group>"; };
 		78B422D97CC074A0C31DEF45 /* Pods_JSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E0444D66D24EF6776A4466 /* Pods-JSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSDemo/Pods-JSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +75,8 @@
 				37D113031EF52DFC006B0402 /* AppDelegate.m */,
 				37D113051EF52DFC006B0402 /* ViewController.h */,
 				37D113061EF52DFC006B0402 /* ViewController.m */,
+				37D113191EF563A7006B0402 /* webViewjavascribtViewController.h */,
+				37D1131A1EF563A7006B0402 /* webViewjavascribtViewController.m */,
 				37D113161EF55D2A006B0402 /* TBJStest.h */,
 				37D113171EF55D2A006B0402 /* TBJStest.m */,
 				37D113081EF52DFC006B0402 /* Main.storyboard */,
@@ -235,6 +240,7 @@
 				37D113071EF52DFC006B0402 /* ViewController.m in Sources */,
 				37D113041EF52DFC006B0402 /* AppDelegate.m in Sources */,
 				37D113011EF52DFC006B0402 /* main.m in Sources */,
+				37D1131B1EF563A7006B0402 /* webViewjavascribtViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
